@@ -26,7 +26,7 @@ export const toDraggableMap = memoizeOne(
 
 export const toDroppableList = memoizeOne(
   (droppables: DroppableDimensionMap): DroppableDimension[] =>
-    values(droppables),
+    values(droppables).reverse(),
 );
 
 export const toDraggableList = memoizeOne(
